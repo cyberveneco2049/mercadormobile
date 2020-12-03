@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mercado ProVII</title>
+        <!--JQUERY MOBILE-->
+        <link rel="stylesheet" href="themes/mercado3.min.css" />
+        <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="themes/jquery.mobile.structure-1.4.5.min.css" />
+        <script src="jquery-1.11.1.min.js"></script>
+        <script src="jquery.mobile-1.4.5.min.js"></script>
+        <script src="./js.js"></script>
+        <!--CSS-->
+        <link rel="stylesheet" href="css/fontello.css">
+    </head>
+<body>
+    <div data-role="page" id="registrar-producto">
+
+	    <div data-role="header">
+
+            <h1>Registrar Productos</h1>
+			<button href="" id="sessionKiller"><i class="icon-logout">Cerrar Sesion</i></button>
+
+        </div>
+        <div data-role="content" data-theme="a">
+			<div class="modal-dialog text-center">
+				<div class="col-sm-8 main-section">
+					<div class="modal-content">
+						<div class="form-group" id="user-group">
+						    <h3>Número del Producto:</h3>
+							<input type="text" class="form-control" name="productID" placeholder="Aqui el número..." id="productID"/>
+						</div>
+						<div class="form-group" id="user-group">
+						    <h3>Nombre del Producto:</h3>
+							<input type="text" class="form-control" name="productName" placeholder="Aqui el nombre..." id="productName"/>
+						</div>
+						<h3>Tipo de Producto:</h3>
+						<form>
+                        <div class="ui-field-contain">
+                            <select name="select-native-1" id="select-native-1">
+                                <option value="1">Carnes y Derivados de Animales</option>
+                                <option value="2">Frutas, Verduras y Hortalizas</option>
+                                <option value="4">Granos y Cereales</option>
+                                <option value="5">Snacks y Bebidas</option>
+                                <option value="6">Harinas</option>
+                            </select>
+                        </div>
+                        </form>
+						<button type="button" class="btn btn-primary" id="registrarProducto"> Registrar Producto </button>
+						<!--<div class="col-12 forgot">
+							<p>¿Nuevo aqui?</p>
+							<a href="registrarse.html" title="Crear una cuenta">Create una cuenta</a>
+						</div>-->
+					</div>
+				</div>
+			</div>
+		</div>
+        <!--<div data-role="collapsible-set" data-theme="b" data-content-theme="b">
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="d"
+                data-count-theme="b" data-filter="true" data-filter-placeholder="Mamalo" value="Serial"></ul>
+
+                <input type="submit" value="Continuar">
+            </div>-->
+
+
+        <div data-role="footer" data-position="fixed" style="text-align:center;">
+
+            <nav data-role="navbar">
+                <ul>
+                    <li><a href="home.html"><i class="icon-home">Home</i></a></li>
+                    <li><a href="productos.html"><i class="icon-basket" id="irProductos">Productos</i></a></li>
+                </ul>
+            </nav>
+            
+            2020 &copy; Universidad Nueva Esparta
+            <a style="font-size: 10.5px;" href="https://github.com/pro7une">
+                <i class="icon-github-circled"></i> Github
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
